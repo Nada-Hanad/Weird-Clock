@@ -39,7 +39,7 @@
 28        android:name="io.flutter.app.FlutterApplication"
 28-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:14:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.2.0] /Users/hanadnada/.gradle/caches/transforms-2/files-2.1/b6252bb7f30c7dceb20e97dfa6dfae00/core-1.2.0/AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.6.0] /Users/hanadnada/.gradle/caches/transforms-2/files-2.1/dcfb90d56760b4bedcc8558d12543dd3/core-1.6.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
 31-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:16:9-43

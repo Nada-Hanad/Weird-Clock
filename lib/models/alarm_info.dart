@@ -4,7 +4,6 @@ class AlarmInfo {
   DateTime alarmDateTime;
   bool isPending;
   int gradientColorIndex;
-  bool isActivated = false ;
 
   AlarmInfo(
       {this.id,
@@ -12,7 +11,6 @@ class AlarmInfo {
       this.alarmDateTime,
       this.isPending,
       this.gradientColorIndex});
-
   factory AlarmInfo.fromMap(Map<String, dynamic> json) => AlarmInfo(
         id: json["id"],
         title: json["title"],
