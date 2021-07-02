@@ -1,3 +1,4 @@
+import 'package:android_alarm_manager/android_alarm_manager.dart';
 import 'package:clock_app/alarm_helper.dart';
 import 'package:clock_app/constants/theme_data.dart';
 import 'package:clock_app/data.dart';
@@ -18,6 +19,7 @@ class _AlarmPageState extends State<AlarmPage> {
   DateTime _alarmTime;
   String _alarmTimeString;
   AlarmHelper _alarmHelper = AlarmHelper();
+  bool alarmOn = false;
   Future<List<AlarmInfo>> _alarms;
   List<AlarmInfo> _currentAlarms;
 
@@ -35,6 +37,12 @@ class _AlarmPageState extends State<AlarmPage> {
     _alarms = _alarmHelper.getAlarms();
     if (mounted) setState(() {});
   }
+  static Future<void> callback() async {
+    print('Alarm fired!');
+
+    // Get the previous cached count and increment it.
+
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +52,7 @@ class _AlarmPageState extends State<AlarmPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Text(
-            'Alarm',
+            'AYA NOD',
             style: TextStyle(
                 fontFamily: 'avenir',
                 fontWeight: FontWeight.w700,
@@ -91,37 +99,35 @@ class _AlarmPageState extends State<AlarmPage> {
                               children: <Widget>[
                                 Row(
                                   children: <Widget>[
-                                    Icon(
-                                      Icons.label,
-                                      color: Colors.white,
-                                      size: 24,
-                                    ),
+
                                     SizedBox(width: 8),
                                     Text(
-                                      alarm.title,
+                                      alarmTime,
                                       style: TextStyle(
                                           color: Colors.white,
-                                          fontFamily: 'avenir'),
+                                          fontFamily: 'avenir',
+                                          fontSize: 24,
+                                          fontWeight: FontWeight.w700),
                                     ),
+
                                   ],
                                 ),
                                 Switch(
-                                  onChanged: (bool value) {},
-                                  value: true,
+                                  onChanged: (bool value) {
+                                    setState(() {
+                                      alarm.isActivated=!alarm.isActivated;
+                                    });
+                                  },
+                                  value: alarm.isActivated,
                                   activeColor: Colors.white,
                                 ),
                               ],
-                            ),
-                            Text(
-                              'Mon-Fri',
-                              style: TextStyle(
-                                  color: Colors.white, fontFamily: 'avenir'),
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Text(
-                                  alarmTime,
+                                  "",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontFamily: 'avenir',
@@ -260,8 +266,10 @@ class _AlarmPageState extends State<AlarmPage> {
                       else
                         Center(
                             child: Text(
-                          'Only 5 alarms allowed!',
-                          style: TextStyle(color: Colors.white),
+                          'RAK TAGHI WHD SHWIA 5 BZF CALMI!',
+                          style: TextStyle(
+                            fontSize: 20,
+                              color: Colors.white),
                         )),
                     ]).toList(),
                   );
@@ -303,7 +311,14 @@ class _AlarmPageState extends State<AlarmPage> {
         scheduledNotificationDateTime, platformChannelSpecifics);
   }
 
-  void onSaveAlarm() {
+
+  void onSaveAlarm() async {
+    await AndroidAlarmManager.oneShotAt(
+       _alarmTime,
+        // Ensure we have a unique alarm ID.
+        1,
+        callback,);
+
     DateTime scheduleAlarmDateTime;
     if (_alarmTime.isAfter(DateTime.now()))
       scheduleAlarmDateTime = _alarmTime;

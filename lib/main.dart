@@ -1,3 +1,4 @@
+import 'package:android_alarm_manager/android_alarm_manager.dart';
 import 'package:clock_app/enums.dart';
 import 'package:clock_app/models/menu_info.dart';
 import 'package:flutter/material.dart';
@@ -27,6 +28,7 @@ void main() async {
       debugPrint('notification payload: ' + payload);
     }
   });
+  await AndroidAlarmManager.initialize();
   runApp(MyApp());
 }
 
