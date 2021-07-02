@@ -1,21 +1,20 @@
 import 'package:android_alarm_manager/android_alarm_manager.dart';
 import 'package:clock_app/alarm_helper.dart';
 import 'package:clock_app/constants/theme_data.dart';
-import 'package:clock_app/data.dart';
 import 'package:clock_app/models/alarm_info.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:intl/intl.dart';
-
+import 'package:audioplayers/audioplayers.dart';
 import '../main.dart';
-
 class AlarmPage extends StatefulWidget {
   @override
   _AlarmPageState createState() => _AlarmPageState();
 }
 
 class _AlarmPageState extends State<AlarmPage> {
+ static AudioPlayer advancedPlayer;
   DateTime _alarmTime;
   String _alarmTimeString;
   AlarmHelper _alarmHelper = AlarmHelper();
@@ -31,14 +30,20 @@ class _AlarmPageState extends State<AlarmPage> {
       loadAlarms();
     });
     super.initState();
+
+  }
+ static Future loadMusic() async {
+    advancedPlayer = await AudioCache().loop("audio/music.mp3");
   }
 
   void loadAlarms() {
     _alarms = _alarmHelper.getAlarms();
     if (mounted) setState(() {});
   }
-  static Future<void> callback() async {
+   static Future<void> callback() async {
+    loadMusic();
     print('Alarm fired!');
+
 
     // Get the previous cached count and increment it.
 
@@ -51,6 +56,7 @@ class _AlarmPageState extends State<AlarmPage> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+
           Text(
             'AYA NOD',
             style: TextStyle(
@@ -106,20 +112,11 @@ class _AlarmPageState extends State<AlarmPage> {
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontFamily: 'avenir',
-                                          fontSize: 24,
+                                          fontSize: 28,
                                           fontWeight: FontWeight.w700),
                                     ),
 
                                   ],
-                                ),
-                                Switch(
-                                  onChanged: (bool value) {
-                                    setState(() {
-                                      alarm.isActivated=!alarm.isActivated;
-                                    });
-                                  },
-                                  value: alarm.isActivated,
-                                  activeColor: Colors.white,
                                 ),
                               ],
                             ),
@@ -160,9 +157,8 @@ class _AlarmPageState extends State<AlarmPage> {
                               borderRadius:
                                   BorderRadius.all(Radius.circular(24)),
                             ),
-                            child: FlatButton(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 32, vertical: 16),
+                            child: TextButton(
+
                               onPressed: () {
                                 _alarmTimeString =
                                     DateFormat('HH:mm').format(DateTime.now());
@@ -182,55 +178,51 @@ class _AlarmPageState extends State<AlarmPage> {
                                           padding: const EdgeInsets.all(32),
                                           child: Column(
                                             children: [
-                                              FlatButton(
-                                                onPressed: () async {
-                                                  var selectedTime =
-                                                      await showTimePicker(
-                                                    context: context,
-                                                    initialTime:
-                                                        TimeOfDay.now(),
-                                                  );
-                                                  if (selectedTime != null) {
-                                                    final now = DateTime.now();
-                                                    var selectedDateTime =
-                                                        DateTime(
-                                                            now.year,
-                                                            now.month,
-                                                            now.day,
-                                                            selectedTime.hour,
-                                                            selectedTime
-                                                                .minute);
-                                                    _alarmTime =
-                                                        selectedDateTime;
-                                                    setModalState(() {
-                                                      _alarmTimeString =
-                                                          DateFormat('HH:mm')
-                                                              .format(
-                                                                  selectedDateTime);
-                                                    });
-                                                  }
-                                                },
-                                                child: Text(
-                                                  _alarmTimeString,
-                                                  style:
-                                                      TextStyle(fontSize: 32),
+                                              Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius: BorderRadius.circular(12),
+
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                    width: 2,
+                                                  ),
+                                                ),
+                                                child: TextButton(
+                                                  onPressed: () async {
+                                                    var selectedTime =
+                                                        await showTimePicker(
+                                                      context: context,
+                                                      initialTime:
+                                                          TimeOfDay.now(),
+                                                    );
+                                                    if (selectedTime != null) {
+                                                      final now = DateTime.now();
+                                                      var selectedDateTime =
+                                                          DateTime(
+                                                              now.year,
+                                                              now.month,
+                                                              now.day,
+                                                              selectedTime.hour,
+                                                              selectedTime
+                                                                  .minute);
+                                                      _alarmTime =
+                                                          selectedDateTime;
+                                                      setModalState(() {
+                                                        _alarmTimeString =
+                                                            DateFormat('HH:mm')
+                                                                .format(
+                                                                    selectedDateTime);
+                                                      });
+                                                    }
+                                                  },
+                                                  child: Text(
+                                                    _alarmTimeString,
+                                                    style:
+                                                        TextStyle(fontSize: 32),
+                                                  ),
                                                 ),
                                               ),
-                                              ListTile(
-                                                title: Text('Repeat'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
-                                              ListTile(
-                                                title: Text('Sound'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
-                                              ListTile(
-                                                title: Text('Title'),
-                                                trailing: Icon(
-                                                    Icons.arrow_forward_ios),
-                                              ),
+                                              SizedBox(height: 20,),
                                               FloatingActionButton.extended(
                                                 onPressed: onSaveAlarm,
                                                 icon: Icon(Icons.alarm),
@@ -316,8 +308,10 @@ class _AlarmPageState extends State<AlarmPage> {
     await AndroidAlarmManager.oneShotAt(
        _alarmTime,
         // Ensure we have a unique alarm ID.
-        1,
-        callback,);
+        0,
+        callback,
+        alarmClock : true,);
+
 
     DateTime scheduleAlarmDateTime;
     if (_alarmTime.isAfter(DateTime.now()))
@@ -327,7 +321,7 @@ class _AlarmPageState extends State<AlarmPage> {
 
     var alarmInfo = AlarmInfo(
       alarmDateTime: scheduleAlarmDateTime,
-      gradientColorIndex: _currentAlarms.length,
+      gradientColorIndex: 0,
       title: 'alarm',
     );
     _alarmHelper.insertAlarm(alarmInfo);
@@ -342,3 +336,4 @@ class _AlarmPageState extends State<AlarmPage> {
     loadAlarms();
   }
 }
+

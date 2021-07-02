@@ -1,4 +1,9 @@
 # This is a generated file; do not edit or check into version control.
-android_alarm_manager=C:\\flut\\flutter_windows_2.0.4-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\android_alarm_manager-2.0.2\\
-flutter_local_notifications=C:\\flut\\flutter_windows_2.0.4-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\flutter_local_notifications-1.4.4+2\\
-sqflite=C:\\flut\\flutter_windows_2.0.4-stable\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\sqflite-1.3.1\\
+android_alarm_manager=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/android_alarm_manager-2.0.2/
+audioplayers=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.19.1/
+flutter_local_notifications=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-1.5.0+1/
+path_provider=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.2/
+path_provider_linux=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.0.0/
+path_provider_macos=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.0/
+path_provider_windows=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.1/
+sqflite=/Users/hanadnada/Developement/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-1.3.1/

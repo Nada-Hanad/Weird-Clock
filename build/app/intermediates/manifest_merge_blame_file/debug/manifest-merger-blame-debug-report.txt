@@ -12,14 +12,14 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/debug/AndroidManifest.xml:6:22-64
 15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-15-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:3:5-80
-15-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:3:22-78
+15-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:3:5-80
+15-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:3:22-78
 16    <uses-permission android:name="android.permission.WAKE_LOCK" />
-16-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:4:5-67
-16-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:4:22-65
+16-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:4:5-67
+16-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:4:22-65
 17    <!--
 18 io.flutter.app.FlutterApplication is an android.app.Application that
 19         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -28,37 +28,37 @@
 22         FlutterApplication and put your custom class here.
 23    -->
 24    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-24-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:3:5-80
-24-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:3:22-78
+24-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:3:5-80
+24-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:3:22-78
 25    <uses-permission android:name="android.permission.VIBRATE" />
-25-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:11:5-66
-25-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:11:22-63
+25-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:11:5-66
+25-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:11:22-63
 26
 27    <application
-27-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:13:5-72:19
+27-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:13:5-72:19
 28        android:name="io.flutter.app.FlutterApplication"
-28-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:14:9-57
+28-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:14:9-57
 29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.2.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6252bb7f30c7dceb20e97dfa6dfae00\core-1.2.0\AndroidManifest.xml:24:18-86
+29-->[androidx.core:core:1.6.0] /Users/hanadnada/.gradle/caches/transforms-2/files-2.1/dcfb90d56760b4bedcc8558d12543dd3/core-1.6.0/AndroidManifest.xml:24:18-86
 30        android:debuggable="true"
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:16:9-43
+31-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:16:9-43
 32        android:label="clock_app" >
-32-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:15:9-34
+32-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:15:9-34
 33        <activity
-33-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:17:9-45:20
+33-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:17:9-45:20
 34            android:name="com.example.clock_app.MainActivity"
-34-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:18:13-41
+34-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:18:13-41
 35            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-35-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:21:13-163
+35-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:21:13-163
 36            android:hardwareAccelerated="true"
-36-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:22:13-47
+36-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:22:13-47
 37            android:launchMode="singleTop"
-37-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:19:13-43
+37-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:19:13-43
 38            android:theme="@style/LaunchTheme"
-38-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:20:13-47
+38-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:20:13-47
 39            android:windowSoftInputMode="adjustResize" >
-39-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:23:13-55
+39-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:23:13-55
 40
 41            <!--
 42                 Specifies an Android theme to apply to this Activity as soon as
@@ -67,11 +67,11 @@
 45                 to determine the Window background behind the Flutter UI.
 46            -->
 47            <meta-data
-47-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:28:13-31:17
+47-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:28:13-31:17
 48                android:name="io.flutter.embedding.android.NormalTheme"
-48-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:29:15-70
+48-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:29:15-70
 49                android:resource="@style/NormalTheme" />
-49-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:30:15-52
+49-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:30:15-52
 50            <!--
 51                 Displays an Android View that continues showing the launch screen
 52                 Drawable until Flutter paints its first frame, then this splash
@@ -80,77 +80,77 @@
 55                 Flutter's first frame.
 56            -->
 57            <meta-data
-57-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:37:13-40:17
+57-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:37:13-40:17
 58                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-58-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:38:15-79
+58-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:38:15-79
 59                android:resource="@drawable/launch_background" />
-59-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:39:15-61
+59-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:39:15-61
 60
 61            <intent-filter>
-61-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:41:13-44:29
+61-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:41:13-44:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:42:17-68
-62-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:42:25-66
+62-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:42:17-68
+62-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:42:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:43:17-76
-64-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:43:27-74
+64-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:43:17-76
+64-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:43:27-74
 65            </intent-filter>
 66        </activity>
 67
 68        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
-68-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:46:9-51:20
-68-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:46:19-107
+68-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:46:9-51:20
+68-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:46:19-107
 69            <intent-filter>
-69-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:47:13-50:29
+69-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:47:13-50:29
 70                <action android:name="android.intent.action.BOOT_COMPLETED" />
-70-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:48:17-78
-70-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:48:25-76
+70-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:48:17-78
+70-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:48:25-76
 71                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
-71-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:49:17-83
-71-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:49:25-81
+71-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:49:17-83
+71-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:49:25-81
 72            </intent-filter>
 73        </receiver>
 74        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
-74-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:52:9-106
-74-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:52:19-103
+74-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:52:9-106
+74-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:52:19-103
 75        <!--
 76             Don't delete the meta-data below.
 77             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 78        -->
 79        <meta-data
-79-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:55:9-57:33
+79-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:55:9-57:33
 80            android:name="flutterEmbedding"
-80-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:56:13-44
+80-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:56:13-44
 81            android:value="2" />
-81-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:57:13-30
+81-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:57:13-30
 82
 83        <service
-83-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:58:9-61:39
+83-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:58:9-61:39
 84            android:name="io.flutter.plugins.androidalarmmanager.AlarmService"
-84-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:59:13-79
+84-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:59:13-79
 85            android:exported="false"
-85-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:61:13-37
+85-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:61:13-37
 86            android:permission="android.permission.BIND_JOB_SERVICE" />
-86-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:60:13-69
+86-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:60:13-69
 87
 88        <receiver
-88-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:62:9-64:39
+88-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:62:9-64:39
 89            android:name="io.flutter.plugins.androidalarmmanager.AlarmBroadcastReceiver"
-89-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:63:13-89
+89-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:63:13-89
 90            android:exported="false" />
-90-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:64:13-37
+90-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:64:13-37
 91        <receiver
-91-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:65:9-71:20
+91-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:65:9-71:20
 92            android:name="io.flutter.plugins.androidalarmmanager.RebootBroadcastReceiver"
-92-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:66:13-90
+92-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:66:13-90
 93            android:enabled="false" >
-93-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:67:13-36
+93-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:67:13-36
 94            <intent-filter>
-94-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:68:13-70:29
+94-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:68:13-70:29
 95                <action android:name="android.intent.action.BOOT_COMPLETED" />
-95-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:48:17-78
-95-->C:\Users\user\AndroidStudioProjects\Weird-Clock\android\app\src\main\AndroidManifest.xml:48:25-76
+95-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:48:17-78
+95-->/Users/hanadnada/AndroidStudioProjects/Weird-Clock/android/app/src/main/AndroidManifest.xml:48:25-76
 96            </intent-filter>
 97        </receiver>
 98    </application>
