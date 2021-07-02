@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "android_alarm_manager",
+      "rootUri": "file:///C:/flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/android_alarm_manager-2.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "async",
       "rootUri": "file:///C:/flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0",
       "packageUri": "lib/",
@@ -218,7 +224,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-07-02T15:10:51.359806Z",
+  "generated": "2021-07-02T19:32:35.833883Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

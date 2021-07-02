@@ -2,6 +2,13 @@
   <library name="Dart Packages" type="DartPackagesLibraryType">
     <properties>
       <option name="packageNameToDirsMap">
+        <entry key="android_alarm_manager">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/android_alarm_manager-2.0.2/lib" />
+            </list>
+          </value>
+        </entry>
         <entry key="async">
           <value>
             <list>
@@ -250,6 +257,7 @@
       </option>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../../flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/android_alarm_manager-2.0.2/lib" />
       <root url="file://$PROJECT_DIR$/../../../../flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.5.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib" />
       <root url="file://$PROJECT_DIR$/../../../../flut/flutter_windows_2.0.4-stable/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0/lib" />
