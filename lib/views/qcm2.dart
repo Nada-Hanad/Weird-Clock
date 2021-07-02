@@ -25,34 +25,84 @@ class _QcmPageState extends State<QcmPage> {
         Text(
         'AYA NOD',
         style: TextStyle(
+
             fontFamily: 'avenir',
             fontWeight: FontWeight.w700,
             color: CustomColors.primaryTextColor,
             fontSize: 24),
       ),
-        Row(
-            children: <Widget>[
-              Row(
-                children: <Widget>[
 
-                  SizedBox(width: 8),
-                  Text(
-                    "This is the question",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'avenir',
-                        fontSize: 24,
-                        fontWeight: FontWeight.w700),
+          Container (
+            child: Container(
+              height: 200,
+              margin: const EdgeInsets.only(top:34,bottom: 32),
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 16, vertical: 8),
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [Color(0xFFFFFFFF), Color(0xFFEBF2F6)],
+                  begin: Alignment.centerLeft,
+                  end: Alignment.centerRight,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: [Color(0xFF6448FE), Color(0xFF5FC6FF)].last.withOpacity(0.4),
+                    blurRadius: 8,
+                    spreadRadius: 2,
+                    offset: Offset(4,4),
                   ),
+                ],
+                borderRadius: BorderRadius.all(Radius.circular(24)),
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Row(
 
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Row(
+                        children: <Widget>[
+
+                          SizedBox(width: 40),
+                          Text(
+                            "This is the question",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'avenir',
+                                fontSize: 24,
+                                fontWeight: FontWeight.w700),
+                          ),
+
+                        ],
+                      ),
+
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Text(
+                        "",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: 'avenir',
+                            fontSize: 24,
+                            fontWeight: FontWeight.w700),
+                      ),
+
+                    ],
+                  ),
                 ],
               ),
-      ],
-    ),
-          Expanded(
+            ),
+          ),
+
+          Container (
             child: Container(
-            height: 0,
-            margin: const EdgeInsets.only(bottom: 32),
+              height: 65,
+              width: 350,
+            margin: const EdgeInsets.only(top:140 , bottom: 28),
             padding: const EdgeInsets.symmetric(
                 horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
@@ -69,7 +119,72 @@ class _QcmPageState extends State<QcmPage> {
                   offset: Offset(4, 4),
                 ),
               ],
-              borderRadius: BorderRadius.all(Radius.circular(24)),
+              borderRadius: BorderRadius.all(Radius.circular(26)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Row(
+
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Row(
+                      children: <Widget>[
+
+                        SizedBox(width:80),
+                        Text(
+                          "This is the first answer",
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'avenir',
+                              fontSize: 12,
+                              fontWeight: FontWeight.w200),
+                        ),
+
+                      ],
+                    ),
+
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Text(
+                      "",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'avenir',
+                          fontSize: 24,
+                          fontWeight: FontWeight.w700),
+                    ),
+
+                  ],
+                ),
+              ],
+            ),
+        ),
+          ),Container (
+            child: Container(
+              height: 65,
+              width: 350,
+            margin: const EdgeInsets.only(top: 0, bottom: 28),
+            padding: const EdgeInsets.symmetric(
+                horizontal: 16, vertical: 8),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFF6448FE), Color(0xFF5FC6FF)],
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: [Color(0xFF6448FE), Color(0xFF5FC6FF)].last.withOpacity(0.4),
+                  blurRadius: 8,
+                  spreadRadius: 2,
+                  offset: Offset(4, 4),
+                ),
+              ],
+              borderRadius: BorderRadius.all(Radius.circular(26)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,7 +202,7 @@ class _QcmPageState extends State<QcmPage> {
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'avenir',
-                              fontSize: 24,
+                              fontSize: 12,
                               fontWeight: FontWeight.w700),
                         ),
 
@@ -113,10 +228,11 @@ class _QcmPageState extends State<QcmPage> {
               ],
             ),
         ),
-          ),Expanded(
+          ),Container (
             child: Container(
-
-            margin: const EdgeInsets.only(bottom: 32),
+              height: 65,
+              width: 350,
+            margin: const EdgeInsets.only(top:0 , bottom: 32),
             padding: const EdgeInsets.symmetric(
                 horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
@@ -133,87 +249,25 @@ class _QcmPageState extends State<QcmPage> {
                   offset: Offset(4, 4),
                 ),
               ],
-              borderRadius: BorderRadius.all(Radius.circular(24)),
+              borderRadius: BorderRadius.all(Radius.circular(26)),
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Row(
+
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Row(
                       children: <Widget>[
 
-                        SizedBox(width: 8),
+                        SizedBox(width: 40),
                         Text(
-                          "This is the second answer",
+                          "This is the first answer",
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'avenir',
-                              fontSize: 24,
-                              fontWeight: FontWeight.w700),
-                        ),
-
-                      ],
-                    ),
-
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Text(
-                      "",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'avenir',
-                          fontSize: 24,
-                          fontWeight: FontWeight.w700),
-                    ),
-
-                  ],
-                ),
-              ],
-            ),
-        ),
-          ),Expanded(
-            child: Container(
-            height: 0,
-            margin: const EdgeInsets.only(bottom: 32),
-            padding: const EdgeInsets.symmetric(
-                horizontal: 16, vertical: 8),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Color(0xFF6448FE), Color(0xFF5FC6FF)],
-                begin: Alignment.centerLeft,
-                end: Alignment.centerRight,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: [Color(0xFF6448FE), Color(0xFF5FC6FF)].last.withOpacity(0.4),
-                  blurRadius: 8,
-                  spreadRadius: 2,
-                  offset: Offset(4, 4),
-                ),
-              ],
-              borderRadius: BorderRadius.all(Radius.circular(24)),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Row(
-                      children: <Widget>[
-
-                        SizedBox(width: 8),
-                        Text(
-                          "This is the third answer",
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'avenir',
-                              fontSize: 24,
+                              fontSize: 12,
                               fontWeight: FontWeight.w700),
                         ),
 
